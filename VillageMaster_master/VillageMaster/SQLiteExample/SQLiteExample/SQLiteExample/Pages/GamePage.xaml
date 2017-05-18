@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLiteExample.Pages.GamePage">
+    <StackLayout Padding="50">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <RelativeLayout VerticalOptions="Fill">
+                <Image VerticalOptions="Center" Margin="10, 0" WidthRequest="20" HeightRequest="20" Source="https://image.flaticon.com/icons/png/128/148/148836.png"></Image>
+                <BoxView WidthRequest="5" HeightRequest="30" BackgroundColor="Green"></BoxView>
+            </RelativeLayout>
+        </Grid>
+        <Label>Otázka</Label>
+        <Image></Image>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </StackLayout>
+</ContentPage>
