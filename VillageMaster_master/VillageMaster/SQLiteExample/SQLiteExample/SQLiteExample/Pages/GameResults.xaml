@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLiteExample.Pages.GameResults">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+    </Grid>
+    <StackLayout Grid.Row="0">
+        <Label Text="" />
+        <Label Text="Odehraný čas [min.]" />
+        <Label Text="Nejvyšší nahrané scóre [Armáda]" />
+        <Label Text="Nejvyšší nahrané scóre [Potraviny]" />
+        <Label Text="Nejvyšší nahrané scóre [Spokojenost]" />
+        <Label Text="Směr, kterým se hráč ubíral" />
+    </StackLayout>
+</ContentPage>

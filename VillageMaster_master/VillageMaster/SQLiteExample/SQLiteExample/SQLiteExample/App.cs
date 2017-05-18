@@ -11,7 +11,7 @@ namespace SQLiteExample
     {
         public App()
         {
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new Pages.GameResults());
         }
 
         protected override void OnStart()
