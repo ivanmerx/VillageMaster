@@ -2,26 +2,52 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SQLiteExample.Pages.GamePage">
-    <StackLayout Padding="50">
+    <Grid Padding="50">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <RelativeLayout VerticalOptions="Fill">
-                <Image VerticalOptions="Center" Margin="10, 0" WidthRequest="20" HeightRequest="20" Source="https://image.flaticon.com/icons/png/128/148/148836.png"></Image>
-                <BoxView WidthRequest="5" HeightRequest="30" BackgroundColor="Green"></BoxView>
-            </RelativeLayout>
+            <StackLayout VerticalOptions="Fill">
+                <Image VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 15" WidthRequest="20" HeightRequest="20" Source="https://image.flaticon.com/icons/png/128/148/148836.png"></Image>
+                <BoxView HeightRequest="5" BackgroundColor="Green"></BoxView>
+            </StackLayout>
+            <StackLayout Grid.Column="1" VerticalOptions="Fill">
+                <Image VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 15" WidthRequest="20" HeightRequest="20" Source="https://image.flaticon.com/icons/png/128/148/148836.png"></Image>
+                <BoxView HeightRequest="5" BackgroundColor="Green"></BoxView>
+            </StackLayout>
+            <StackLayout Grid.Column="2" VerticalOptions="Fill">
+                <Image VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 15" WidthRequest="20" HeightRequest="20" Source="https://image.flaticon.com/icons/png/128/148/148836.png"></Image>
+                <BoxView HeightRequest="5" BackgroundColor="Green"></BoxView>
+            </StackLayout>
+            <StackLayout Grid.Column="3" VerticalOptions="Fill">
+                <Image VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 15" WidthRequest="20" HeightRequest="20" Source="https://image.flaticon.com/icons/png/128/148/148836.png"></Image>
+                <BoxView HeightRequest="5" BackgroundColor="Green"></BoxView>
+            </StackLayout>
+            <StackLayout Grid.Column="4" VerticalOptions="Fill">
+                <Image VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 15" WidthRequest="20" HeightRequest="20" Source="https://image.flaticon.com/icons/png/128/148/148836.png"></Image>
+                <BoxView HeightRequest="5" BackgroundColor="Green"></BoxView>
+            </StackLayout>
         </Grid>
-        <Label>Otázka</Label>
-        <Image></Image>
-        <Grid>
+        <StackLayout Grid.Row="1">
+            <Label>Dochází ti jídlo, chceš zahájit lov na divokou zvěř?</Label>
+            <Image Source="https://s-media-cache-ak0.pinimg.com/originals/72/46/75/724675a1440af322f0e1140cb8711538.jpg"></Image>
+        </StackLayout>
+        <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" BackgroundColor="#675252" Text="Ano"/>
+            <Button Grid.Column="1" BackgroundColor="#675252" Text="Ne"/>
         </Grid>
-    </StackLayout>
+    </Grid>
 </ContentPage>
