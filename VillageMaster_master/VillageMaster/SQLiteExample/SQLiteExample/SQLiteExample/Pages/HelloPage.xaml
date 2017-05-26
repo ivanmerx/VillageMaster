@@ -6,7 +6,7 @@
     <StackLayout>
         <Image  Margin="0,40,0,40"  HorizontalOptions="Center" VerticalOptions="Center" Source="logo_village.png" x:Name="obrazek"/>
         <Button TextColor="#675252" FontSize="40" Text="Začít hru"></Button>
-        <Button TextColor="#675252" FontSize="40" Text="Úspěchy"></Button>
-        <Button TextColor="#675252" FontSize="40" Text="Konec hry"></Button>
+        <Button BorderWidth="4" BorderColor="#4D4D4D" TextColor="#675252" FontSize="40" Text="Úspěchy"/>
+        <Button BorderWidth="4" BorderColor="#4D4D4D" TextColor="#675252" FontSize="40" Text="Konec hry"/>
     </StackLayout>
 </ContentPage> 
