@@ -3,7 +3,9 @@
     "",
     "\\VillageMaster_master",
     "\\VillageMaster_master\\VillageMaster",
-    "\\VillageMaster_master\\VillageMaster\\SQLiteExample"
+    "\\VillageMaster_master\\VillageMaster\\SQLiteExample",
+    "\\VillageMaster_master\\VillageMaster\\SQLiteExample\\SQLiteExample",
+    "\\VillageMaster_master\\VillageMaster\\SQLiteExample\\SQLiteExample\\SQLiteExample"
   ],
   "SelectedNode": "\\VillageMaster_master\\VillageMaster\\SQLiteExample\\SQLiteExample.sln",
   "PreviewInSolutionExplorer": false
