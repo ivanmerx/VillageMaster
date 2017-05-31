@@ -15,26 +15,26 @@ namespace SQLiteExample
         public TodoItemDatabase(string dbPath)
         {
             database = new SQLiteAsyncConnection(dbPath);
-            database.CreateTableAsync<Question>().Wait();
+            database.CreateTableAsync<TodoItem>().Wait();
         }
 
 
-        public Task<List<Question>> GetItemsAsync()
+        public Task<List<TodoItem>> GetItemsAsync()
         {
-            return database.Table<Question>().ToListAsync();
+            return database.Table<TodoItem>().ToListAsync();
         }
 
-        public Task<List<Question>> GetItemsNotDoneAsync()
+        public Task<List<TodoItem>> GetItemsNotDoneAsync()
         {
-            return database.QueryAsync<Question>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
+            return database.QueryAsync<TodoItem>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
         }
 
-        public Task<Question> GetItemAsync(int id)
+        public Task<TodoItem> GetItemAsync(int id)
         {
-            return database.Table<Question>().Where(i => i.ID == id).FirstOrDefaultAsync();
+            return database.Table<TodoItem>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
-        public Task<int> SaveItemAsync(Question item)
+        public Task<int> SaveItemAsync(TodoItem item)
         {
             if (item.ID != 0)
             {
@@ -46,7 +46,7 @@ namespace SQLiteExample
             }
         }
 
-        public Task<int> DeleteItemAsync(Question item)
+        public Task<int> DeleteItemAsync(TodoItem item)
         {
             return database.DeleteAsync(item);
         }

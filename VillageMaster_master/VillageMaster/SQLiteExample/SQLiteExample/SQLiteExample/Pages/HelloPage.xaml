@@ -5,9 +5,8 @@
 
     <StackLayout>
         <Image  Margin="0,40,0,40"  HorizontalOptions="Center" VerticalOptions="Center" Source="logo_village.png" x:Name="obrazek"/>
-        <Button TextColor="#675252" FontSize="40" Text="Začít hru"/>
-        <Button TextColor="#675252" FontSize="40" Text="Úspěchy"/>
-        <Button TextColor="#675252" FontSize="40" Text="Konec hry"/>
-        
+        <Button TextColor="#675252" FontSize="40" Text="Začít hru"></Button>
+        <Button TextColor="#675252" FontSize="40" Text="Úspěchy"></Button>
+        <Button TextColor="#675252" FontSize="40" Text="Konec hry"></Button>
     </StackLayout>
 </ContentPage> 

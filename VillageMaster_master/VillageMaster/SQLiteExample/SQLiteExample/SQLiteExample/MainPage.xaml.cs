@@ -14,34 +14,34 @@ namespace SQLiteExample
         public MainPage()
         {
             InitializeComponent();
-            //var dbConnection = App.Database;
+            var dbConnection = App.Database;
 
-            //TodoItemDatabase todoItemDatabase = App.Database;
-            //Question item = new Question();
-            //item.Name = "item";
-            //item.Text = "item text";
-            //App.Database.SaveItemAsync(item);
+            TodoItemDatabase todoItemDatabase = App.Database;
+            TodoItem item = new TodoItem();
+            item.Name = "item";
+            item.Text = "item text";
+            App.Database.SaveItemAsync(item);
 
 
-            //var itemsFromDb = App.Database.GetItemsAsync().Result;
+            var itemsFromDb = App.Database.GetItemsAsync().Result;
             
-            //Debug.WriteLine("                             ");
-            //Debug.WriteLine("                             ");
-            //Debug.WriteLine("                             ");
+            Debug.WriteLine("                             ");
+            Debug.WriteLine("                             ");
+            Debug.WriteLine("                             ");
 
-            //Debug.WriteLine(itemsFromDb.Count);
-            //foreach (Question todoItem in itemsFromDb)
-            //{
-            //    Debug.WriteLine(  todoItem );
-            //}
+            Debug.WriteLine(itemsFromDb.Count);
+            foreach (TodoItem todoItem in itemsFromDb)
+            {
+                Debug.WriteLine(  todoItem );
+            }
 
-            //Debug.WriteLine("                             ");
-            //Debug.WriteLine("                             ");
-            //Debug.WriteLine("                             ");
+            Debug.WriteLine("                             ");
+            Debug.WriteLine("                             ");
+            Debug.WriteLine("                             ");
 
 
-            //ItemsCount.Text = "Items in Database " + itemsFromDb.Count;
-            //ToDoItemsListView.ItemsSource = itemsFromDb;
+            ItemsCount.Text = "Items in Database " + itemsFromDb.Count;
+            ToDoItemsListView.ItemsSource = itemsFromDb;
         }
     }
 }
