@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using SQLiteExample.Pages;
 using Xamarin.Forms;
 
 namespace SQLiteExample
@@ -11,7 +11,7 @@ namespace SQLiteExample
     {
         public App()
         {
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new GamePage());
         }
 
         protected override void OnStart()
